@@ -2,6 +2,8 @@
 
 # source functionality for use in vim's :!<command>
 if [[ $VIMRUNTIME ]]; then
+  # get 256color for vim's :terminal command
+  TERM=xterm-256color
   # source zsh aliases
   source $HOME/.oh-my-zsh/custom/Z_aliases.zsh
 
