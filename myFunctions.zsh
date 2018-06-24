@@ -27,9 +27,8 @@ function cl {
   # spectrum_ls; show all FG color codes
   # spectrum_bls; show all BG color codes
   # Must use print -P to work with $ZSH/lib/spectrum.zsh
-  #print -P $FG[030]$BG[235]' PWD '$reset_color$FG[235]$BG[000]'\ue0b0'$FG[002]' '$(pwd)' '$reset_color$FG[000]'\ue0b0'
 
-  print -P $FG[030]$BG[235]' PWD '$reset_color$FG[235]$BG[030]'\ue0b0'$FG[000]' '$(pwd)' '$reset_color$FG[030]'\ue0b0'
+  print -P $FG[044]$BG[235]' PWD '$reset_color$FG[235]$BG[044]'\ue0b0'$FG[000]' '$(pwd)' '$reset_color$FG[044]'\ue0b0'
 
   # must use this no matter which of the 2 above are used
   echo $reset_color; # must reset or other output (ls) will get messed up
