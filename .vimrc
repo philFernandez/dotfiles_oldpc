@@ -19,6 +19,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'mboughaba/i3config.vim'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript.jsx'] }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
