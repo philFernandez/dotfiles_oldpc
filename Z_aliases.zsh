@@ -4,6 +4,7 @@
   #    ____| ____/ _| _|   _/  _\ ____| ___| _/  _\ ____/ ___| ____/
 
 
+alias i3-style='$HOME/.i3-style/node_modules/.bin/i3-style' # https://github.com/acrisci/i3-style
 alias data='vi ~/Notes/records.json'
 alias pw='pwgen -Bnys 12'
 
