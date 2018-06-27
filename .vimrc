@@ -167,7 +167,7 @@ autocmd BufWrite * :RemoveTrailingSpaces
 " KEYMAPS ===========================
 inoremap jj <Esc>
 nnoremap <silent> <leader><space> :nohl<CR>
-nnoremap <silent> <leader>f :NERDTreeToggle<CR>
+nnoremap <silent> <leader>f :NERDTreeToggle %<CR>
 nnoremap <silent> <leader>l :CtrlPBuffer<CR>
 nnoremap <silent> bp :bN<CR>
 nnoremap <silent> bn :bn<CR>
