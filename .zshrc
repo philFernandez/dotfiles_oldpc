@@ -36,6 +36,8 @@ source $ZSH/oh-my-zsh.sh
 
 source /etc/zsh_command_not_found
 
+export LC_ALL="en_US.UTF-8"
+
 stty -ixon
 
 autoload -U compinit && compinit
