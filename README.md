@@ -3,10 +3,10 @@
 
 ### These are notes for myself, which may or may not work on any linux system.
 
-`mkdir -p $HOME/.dotfiles`
+* `mkdir -p $HOME/.dotfiles`
 
-`git clone git@github.com:philFernandez/dotfiles.git`
+* `git clone git@github.com:philFernandez/dotfiles.git`
 
-`cd $HOME/.dotfiles`
+* `cd $HOME/.dotfiles`
 
-`./linker.sh`
+* `./linker.sh`
