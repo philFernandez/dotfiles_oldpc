@@ -9,4 +9,6 @@
 
 * `cd $HOME/.dotfiles`
 
+* `chmod +x linker.sh`
+
 * `./linker.sh`
