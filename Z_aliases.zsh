@@ -4,9 +4,21 @@
 #    ____| ____/ _| _|   _/  _\ ____| ___| _/  _\ ____/ ___| ____/
 
 
+# alias for theme changing npm program
 alias i3-style='$HOME/.i3-style/node_modules/.bin/i3-style' # https://github.com/acrisci/i3-style
+
+# open config files in vim
+alias eg='vim $HOME/.oh-my-zsh/custom/global_aliases.zsh'
+alias ef='vim $HOME/.dotfiles/myFunctions.zsh'
+alias ep='vim $HOME/.dotfiles/Z_aliases.zsh'
+alias ev='vim $HOME/.dotfiles/.vimrc'
+alias ei='vim $HOME/.dotfiles/i3.config'
+alias rc='vim $HOME/.dotfiles/.zshrc'
+
+# open my records json
 alias data='vi ~/Notes/records.json'
-alias pw='pwgen -Bnys 12'
+# generate secure passwords
+#alias pw='pwgen -Bnys 12'
 alias ppath='print -lo $path'
 # restrict z lookup to current dir tree
 alias zz='z -c'
@@ -29,7 +41,6 @@ alias apl='apt list'
 alias install='sudo apt install -y'
 alias cp='cp -v'
 alias stats='zsh_stats'
-#alias sudo='sudo '
 alias show-kernels='linux-version list'
 alias js='node'
 alias rd='rm -fvr'
@@ -39,7 +50,6 @@ alias k9='kill -9'
 alias ld='ls -ld *(-/DN)' # list directories and links to directories
 alias lh='ls -ld .*' # list hidden files
 alias reload='exec zsh'
-alias eg='vim $HOME/.oh-my-zsh/custom/global_aliases.zsh'
 alias shred='shred -u' # shreds and removes
 alias grbh='git reset --hard'
 alias server='ssh philthy@192.168.0.39'
@@ -57,18 +67,13 @@ alias allclock='watch -n 0.1 grep \"cpu MHz\" /proc/cpuinfo'
 # This does show current freq, real time. Requires installing cpufrequtils
 alias clocks='watch -n 0.1 "cpufreq-info | grep frequency\ is"'
 alias temps="watch -n 0.1 sensors"
-alias ef='vim $HOME/.dotfiles/myFunctions.zsh'
 alias cls='clear'
 alias cll='clear;ls -A'
 alias clll='clear; la'
 alias bk='cd ../ && cl'
-alias ep='vim $HOME/.dotfiles/Z_aliases.zsh'
 alias q='exit'
 alias qq='tmux kill-server'
-alias ev='vim $HOME/.dotfiles/.vimrc'
-alias ei='vim $HOME/.dotfiles/i3.config'
 alias su='sudo su'
-alias rc='vim $HOME/.dotfiles/.zshrc'
 alias pyg='pygmentize'
 alias md='mkdir -p'
 

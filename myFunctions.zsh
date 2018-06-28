@@ -2,7 +2,7 @@
 #  \____    / /   _____//   |   \  \_   _____/_ __  ____   _____/  |_|__| ____   ____   ______
 #    /     /  \_____  \/    ~    \  |    __)|  |  \/    \_/ ___\   __\  |/  _ \ /    \ /  ___/
 #   /     /_  /        \    Y    /  |     \ |  |  /   |  \  \___|  | |  (  <_> )   |  \\___ \
-  #  /_______ \/_______  /\___|_  /   \___  / |____/|___|  /\___  >__| |__|\____/|___|  /____  >
+#  /_______ \/_______  /\___|_  /   \___  / |____/|___|  /\___  >__| |__|\____/|___|  /____  >
 #          \/        \/       \/        \/             \/     \/                    \/     \/
 
 
@@ -12,6 +12,28 @@
 # ^^ (This may no longe be the case (no using oh-my-zhs))
 
 ##### USER FUNCTIONS #######
+
+# Wrapper around pwgen. Generates passwords.
+function pw {
+  # These are assigned default values; Can be overriden by passed in values
+  PW_LEN=${1:-12}
+  NUM_OF_PW=${2:-1}
+  if [ $PW_LEN == '-h' ]; then
+    echo
+    print 'pw is a wrapper around pwgen'
+    echo
+    print 'Usage   : pw <pswd length> <num of pswds>'
+    print 'Default : pw 12 1'
+    echo
+    print 'pwgen -h for more help'
+  else
+    echo
+    pwgen -Byns1 $PW_LEN $NUM_OF_PW
+    echo
+    echo 'LENGTH    : '$PW_LEN
+    echo 'GENERATED : '$NUM_OF_PW
+  fi
+}
 
 function ofirefox {
   firefox $(pwd)

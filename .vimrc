@@ -100,6 +100,11 @@ let g:ctrlp_custom_ignore = "node_modules"
 " ===================================
 
 
+" EASY CLIP =========================
+let g:EasyClipAutoFormat = 1
+" ===================================
+
+
 " VIM SETTINGS=======================
 " indent settings
 set autoindent
