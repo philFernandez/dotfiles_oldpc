@@ -6,14 +6,7 @@ alias -g L="| less"
 alias -g GV="| ack -v --nocolor"
 alias -g G="| ack -i --nocolor"
 alias -g CC="| clipcopy"
-
-# has to be run after another command ex <echo path>
-alias -g pl='${PATH//:/
-}'
-
-
 alias -g NUL="> /dev/null 2>&1"
-
 alias -g WC='|wc -l'
 alias -g LP='|less -p' #<add search term>
 
