@@ -2,6 +2,18 @@
 
 # needs testing
 
+# Depends On The Following:
+# zsh
+# oh-my-zsh
+# powerlevel9k
+# powerline fonts of some type
+# vim
+# vim-plug
+
+# There are other things that these dotfiles configure, but things will be absolutely broken
+# without the above things installed before running this script.
+
+
 VIMFUNDIR=$HOME/.vim/plugin/
 ZSHDIR=$HOME/.oh-my-zsh/custom/
 I3DIR=$HOME/.config/i3/
@@ -10,6 +22,7 @@ I3DIR=$HOME/.config/i3/
   #chmod 664 $file
 #done
 
+# Check for existing config files. If exists backup in '<file>.bak'
 (ls -A $HOME/.zshrc >> /dev/null 2>&1 && mv $HOME/.zshrc $HOME/.zshrc.bak)
 (ls -A $HOME/.vimrc >> /dev/null 2>&1 && mv $HOME/.vimrc $HOME/.vimrc.bak)
 (ls -A $I3DIR/config >> /dev/null 2>&1 && mv $I3DIR/config $I3DIR/config.bak)
@@ -33,11 +46,3 @@ ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/.zshenv $HOME/.zshenv
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
-
-
-
-
-
-
-
