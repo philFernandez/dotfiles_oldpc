@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# will stop script if any error occurs
+set -e
+
 # needs testing
 
 # Depends On The Following:
