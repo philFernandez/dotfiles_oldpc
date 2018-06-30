@@ -1,1 +1,1 @@
-export LESS="-F -X $LESS"
+export LESS="-F -X -R $LESS"
