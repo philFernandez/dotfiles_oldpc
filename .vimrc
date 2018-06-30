@@ -163,6 +163,8 @@ set hidden
 set history=1000
 set noswapfile
 set autowrite
+set signcolumn=yes
+set updatetime=100
 " prevent auto comment on new line
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
