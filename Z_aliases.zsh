@@ -15,7 +15,8 @@ alias eg='vim $HOME/.oh-my-zsh/custom/global_aliases.zsh'
 alias ef='vim $HOME/.dotfiles/myFunctions.zsh'
 alias ep='vim $HOME/.dotfiles/Z_aliases.zsh'
 alias ev='vim $HOME/.dotfiles/.vimrc'
-alias ei='vim $HOME/.dotfiles/i3.config'
+# Must be opened at symlink location for hightlighting to work
+alias ei='vim $HOME/.config/i3/config'
 alias rc='vim $HOME/.dotfiles/.zshrc'
 
 # open my records json
