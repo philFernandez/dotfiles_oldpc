@@ -231,6 +231,8 @@ hide_edge_borders both
 
 # start up applications
 
+# set screen off timer for 1200 seconds && turn off energy star settings
+exec --no-startup-id xset s 1200 && xset -dpms
 # load xrandr script for multi-monitor layout
 exec --no-startup-id ~/.screenlayout/default.sh
 # load script to arange workspaces on dual monitors
