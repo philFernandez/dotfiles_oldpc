@@ -231,13 +231,22 @@ hide_edge_borders both
 
 # start up applications
 
-# set screen off timer for 1200 seconds && turn off energy star settings
+# set screen off timer in xset s <seconds> && turn off energy star settings
+# screen off 20mins
 exec --no-startup-id xset s 1200 && xset -dpms
+
+# suspend to ram 30mins
+# set suspend timer in -time <minutes>
+exec --no-startup-id xautolock -time 30 -locker "i3lock -c 000000 && systemctl suspend"
+
 # load xrandr script for multi-monitor layout
 exec --no-startup-id ~/.screenlayout/default.sh
+
 # load script to arange workspaces on dual monitors
 exec --no-startup-id ~/.bin/arrangei3Workspaces.sh
+
 # map caps lock to control
 exec --no-startup-id setxkbmap -layout us -option ctrl:nocaps
+
 # load wallpaper (optionally name file wallpr.jpg; use exec_always; replace file to change wallpaper)
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/dark_ubuntu.jpg
