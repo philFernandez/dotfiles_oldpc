@@ -167,6 +167,7 @@ set noswapfile
 set autowrite
 set signcolumn=yes
 set updatetime=100
+set ttymouse=xterm2 " allow resize splits w mouse in tmux
 " prevent auto comment on new line
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
