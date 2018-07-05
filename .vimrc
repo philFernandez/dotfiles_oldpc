@@ -2,6 +2,7 @@ let mapleader=','
 
 " VIM-PLUG ==========================
 call plug#begin('~/.vim/plugged')
+Plug 'tmux-plugins/vim-tmux-focus-events' " make tmux and vim play nice
 Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/duoduo'
 Plug 'chriskempson/base16-vim'  " installs many colorschemes
@@ -169,6 +170,8 @@ set updatetime=100
 " prevent auto comment on new line
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
+" reload any outside changes
+au FocusGained,BufEnter * :checktime
 " ===================================
 
 
