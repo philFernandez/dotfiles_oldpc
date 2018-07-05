@@ -29,6 +29,7 @@ alias zz='z -c'
 alias h='~'
 #alias start='urserver-start --no-manager'
 #alias stop='urserver-stop'
+alias v='vim'
 
 # -R makes it so piping from pygmentize is not broken
 alias less='less -R'
