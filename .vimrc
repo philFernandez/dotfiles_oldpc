@@ -29,6 +29,8 @@ Plug 'elzr/vim-json', { 'for': 'json' }
 call plug#end()
 " ===================================
 
+set guifont=Source\ Code\ Pro\ for\ Powerline\ 12
+
 
 " THEME =============================
 syntax on
