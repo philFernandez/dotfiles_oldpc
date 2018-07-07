@@ -5,6 +5,7 @@
 
 
 alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
+alias nvim='$HOME/Programs/nvim.appimage'
 
 
 # alias for theme changing npm program
