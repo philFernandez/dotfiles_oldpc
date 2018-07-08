@@ -1,4 +1,3 @@
-
 let mapleader=","
 
 call plug#begin('~/.local/share/nvim/plugged')
@@ -7,6 +6,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-tern'
+Plug 'ncm2/ncm2-path'
 call plug#end()
 
 " THEME
@@ -16,6 +19,18 @@ set background=dark
 colorscheme materialbox
 let g:airline_theme = 'base16_ashes'
 " ===================================
+
+" COMPLETION =======================
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt+=noinsert
+set shortmess+=c
+au TextChangedI * call ncm2#auto_trigger()
+inoremap <c-c> <ESC>
+inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+" Use <TAB> to select the popup menu:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" ==================================
 
 " AIRLINE ===========================
 
@@ -40,7 +55,6 @@ let g:airline#extensions#tabline#fnamemod = ':t' " dont show full path tabline
 " ===================================
 
 " NVIM SETTINGS
-
 " indent settings
 set autoindent
 set expandtab
