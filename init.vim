@@ -6,11 +6,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rafi/awesome-vim-colorschemes'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-tern'
-Plug 'ncm2/ncm2-path'
+Plug 'scrooloose/nerdcommenter'
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs'
 call plug#end()
+
 
 " THEME
 "set t_Co=256
@@ -20,17 +21,17 @@ colorscheme materialbox
 let g:airline_theme = 'base16_ashes'
 " ===================================
 
-" COMPLETION =======================
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt+=noinsert
-set shortmess+=c
-au TextChangedI * call ncm2#auto_trigger()
-inoremap <c-c> <ESC>
-inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
-" Use <TAB> to select the popup menu:
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" ==================================
+
+" COMPLETION ========================
+
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" tern
+let g:deoplete#sources#ternjs#docs = 1
+" ===================================
+
 
 " AIRLINE ===========================
 
@@ -99,6 +100,7 @@ set autowrite
 set updatetime=100
 
 " KEY MAPS
+tnoremap <Esc> <C-\><C-n>
 inoremap jj <Esc>
 nnoremap cc :clo<cr>
 nnoremap <leader>f :NERDTreeToggle<cr>
@@ -106,5 +108,3 @@ nnoremap <leader><space> :nohl<cr>
 nnoremap J <C-D>
 nnoremap K <C-U>
 nnoremap <space> A
-
-
