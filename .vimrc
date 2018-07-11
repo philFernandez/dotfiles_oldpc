@@ -15,7 +15,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'svermeulen/vim-easyclip'
-Plug 'christoomey/vim-system-copy'
+"Plug 'christoomey/vim-system-copy' " replaced with keyboard shortcuts
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
@@ -179,6 +179,10 @@ au FocusGained,BufEnter * :checktime
 
 " KEYMAPS ===========================
 inoremap jj <Esc>
+" copy into sys clipboard
+vnoremap cp "+y
+" paste from sys clipboard
+nnoremap cv "+p
 nnoremap <silent> <leader><space> :nohl<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>l :CtrlPBuffer<CR>
