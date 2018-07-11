@@ -7,6 +7,8 @@
 alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
 alias nvim='$HOME/Programs/nvim.appimage'
 
+alias lua='lua5.3'
+
 
 # alias for theme changing npm program
 alias i3-style='$HOME/.i3-style/node_modules/.bin/i3-style' # https://github.com/acrisci/i3-style

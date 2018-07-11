@@ -193,6 +193,7 @@ nnoremap J <C-D>
 nnoremap K <C-U>
 " remap mark because of easy clip
 nnoremap gm m
+nnoremap q :q<CR>
 nnoremap <silent> <F1> :GitGutterNextHunk<CR>
 nnoremap <silent> <F2> :GitGutterPrevHunk<CR>
 let g:AutoPairsShortcutToggle = '<F10>'
