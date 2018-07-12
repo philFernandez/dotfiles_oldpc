@@ -105,6 +105,7 @@ let g:ctrlp_custom_ignore = "node_modules"
 
 " EASY CLIP =========================
 let g:EasyClipAutoFormat = 1
+let g:EasyClipUseSubstituteDefaults = 1
 " ===================================
 
 
