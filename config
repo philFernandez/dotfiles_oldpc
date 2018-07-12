@@ -84,13 +84,17 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
 # kill focused window
 bindsym $mod+Shift+q kill
+# start rofi with run and drun combined; ability to ctrl-tab or shift-arrow to ssh
+bindsym $mod+Shift+d exec rofi -modi combi#ssh -show combi -combi-modi run#drun
+# start rofi in window mode; ability to ctrl-tab or shift-arrow to keys
+bindsym $mod+d exec rofi -modi keys#window -show window
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+# start dmenu (a program launcher)
+#bindsym $mod+d exec --no-startup-id dmenu_run
 
 # change focus
 bindsym $mod+h focus left

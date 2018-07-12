@@ -182,7 +182,7 @@ inoremap jj <Esc>
 " copy into sys clipboard
 vnoremap cp "+y
 " paste from sys clipboard
-nnoremap cv "+p
+map cv "+p
 nnoremap <silent> <leader><space> :nohl<CR>
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> <leader>l :CtrlPBuffer<CR>
