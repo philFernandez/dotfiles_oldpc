@@ -79,6 +79,12 @@ let g:airline#extensions#tabline#fnamemod = ':t' " dont show full path tabline
 " ===================================
 
 
+" NERDTREE ==========================
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeChDirMode = 2
+" ===================================
+
+
 " COMPLETION=========================
 set complete-=i " limits the files searched for completions
 let g:ycm_autoclose_preview_window_after_completion = 1
