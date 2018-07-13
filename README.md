@@ -11,4 +11,4 @@
 
 * `chmod +x linker.sh`
 
-~* `./linker.sh`~
+* ~`./linker.sh`~
