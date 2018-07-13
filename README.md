@@ -5,10 +5,10 @@
 
 * `mkdir -p $HOME/.dotfiles`
 
-* `git clone git@github.com:philFernandez/dotfiles.git $HOME/.dotfiles`
+* `git clone https://github.com/philFernandez/dotfiles.git`
 
 * `cd $HOME/.dotfiles`
 
 * `chmod +x linker.sh`
 
-* `./linker.sh`
+~* `./linker.sh`~
