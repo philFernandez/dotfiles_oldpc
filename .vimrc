@@ -153,9 +153,17 @@ set ruler
 set wildmenu
 set number
 set cursorline
+
+" zR - open all folds
+" zM - close all folds
+" zo - unfold area under cursor
+" zc - fold area under cursor
+" zO - unfold recursively under cursor
+" zC - fold recursively under cursor
 set foldmethod=indent
 set foldnestmax=3
-set nofoldenable
+" uncomment to disable fold on file open
+"set nofoldenable
 
 " other settings
 set mouse=n
