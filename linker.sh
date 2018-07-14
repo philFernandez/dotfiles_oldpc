@@ -40,7 +40,7 @@ I3DIR=$HOME/.config/i3/
 
 mkdir -p $VIMFUNDIR && ln -s $HOME/.dotfiles/functions.vim $VIMFUNDIR/functions.vim
 mkdir -p $ZSHDIR && ln -s $HOME/.dotfiles/global_aliases.zsh $ZSHDIR/global_aliases.zsh
-mkdir -p $I3DIR && ln -s $HOME/.dotfiles/i3.config $I3DIR/config
+mkdir -p $I3DIR && ln -s $HOME/.dotfiles/config $I3DIR/config
 ln -s $HOME/.dotfiles/i3status.conf $HOME/.i3status.conf
 ln -s $HOME/.dotfiles/myFunctions.zsh $ZSHDIR/myFunctions.zsh
 ln -s $HOME/.dotfiles/Z_aliases.zsh $ZSHDIR/Z_aliases.zsh
