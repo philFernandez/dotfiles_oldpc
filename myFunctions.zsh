@@ -13,6 +13,11 @@
 
 ##### USER FUNCTIONS #######
 
+# grep things without highlighting results
+function ncgrep {
+  grep --color=never "$@"
+}
+
 # Wrapper around pwgen. Generates passwords.
 function pw {
   # These are assigned default values; Can be overriden by passed in values
