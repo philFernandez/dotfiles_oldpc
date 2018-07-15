@@ -37,12 +37,9 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-"colorscheme base16-ashes
-colorscheme base16-eighties
+color base16-monokai
 
-"let g:airline_theme = 'base16_ashes'
-"let g:airline_theme = 'base16_eighties'
-let g:airline_theme = 'molokai'
+let g:airline_theme = 'base16_monokai'
 
 " need these here (after all other color settings) for it to work in tmux
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
