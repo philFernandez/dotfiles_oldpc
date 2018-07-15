@@ -15,7 +15,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'svermeulen/vim-easyclip'
-"Plug 'christoomey/vim-system-copy' " replaced with keyboard shortcuts
+Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
@@ -41,7 +41,8 @@ endif
 colorscheme base16-eighties
 
 "let g:airline_theme = 'base16_ashes'
-let g:airline_theme = 'base16_eighties'
+"let g:airline_theme = 'base16_eighties'
+let g:airline_theme = 'molokai'
 
 " need these here (after all other color settings) for it to work in tmux
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -88,6 +89,27 @@ nmap <leader>6 <Plug>AirlineSelectTab6
 nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
+" ===================================
+
+
+" TMUX STATUSLINE ===================
+" do :Tmuxline <theme> to change tmux theme
+" to make permanant do ...
+" :TmuxlineSnapshot ~/.tmux-statusline-colors.conf!
+" this file is source in ~/.tmux.conf
+
+" keep airline from overwriting tmux statusline
+let g:airline#extensions#tmuxline#enabled = 0
+
+let g:tmuxline_preset = {
+      \ 'a'   : '#W',
+      \ 'win' : ['#I', '#W'],
+      \ 'cwin': ['#I', '#W'],
+      \ 'y'   : ['#(sensors | grep Package | cut -d " " -f 5)',
+      \ '#(lscpu | grep "CPU MHz:" | cut -d " " -f 15,2)'],
+      \ 'z'   : '%a',
+      \ }
+
 " ===================================
 
 
