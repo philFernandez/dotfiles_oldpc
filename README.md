@@ -5,7 +5,7 @@
 
 * `mkdir -p $HOME/.dotfiles`
 
-* `git clone https://github.com/philFernandez/dotfiles.git`
+* `git clone https://github.com/philFernandez/dotfiles.git $HOME/.dotfiles`
 
 * `cd $HOME/.dotfiles`
 
