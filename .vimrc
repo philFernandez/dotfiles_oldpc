@@ -92,7 +92,7 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 " TMUX STATUSLINE ===================
 " do :Tmuxline <theme> to change tmux theme
 " to make permanant do ...
-" :TmuxlineSnapshot ~/.tmux-statusline-colors.conf!
+" :TmuxlineSnapshot! ~/.tmux-statusline-colors.conf
 " this file is source in ~/.tmux.conf
 
 " keep airline from overwriting tmux statusline
@@ -102,9 +102,8 @@ let g:tmuxline_preset = {
       \ 'a'   : '#W',
       \ 'win' : ['#I', '#W'],
       \ 'cwin': ['#I', '#W'],
-      \ 'y'   : ['#(sensors | grep Package | cut -d " " -f 5)',
-      \ '#(lscpu | grep "CPU MHz:" | cut -d " " -f 15,2)'],
-      \ 'z'   : '%a',
+      \ 'y'   : ['%I:%M'],
+      \ 'z'   : ['%A', '%B', '%d'],
       \ }
 
 " ===================================
