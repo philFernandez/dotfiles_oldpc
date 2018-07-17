@@ -6,7 +6,6 @@ Plug 'tmux-plugins/vim-tmux-focus-events' " make tmux and vim play nice
 Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/duoduo'
 Plug 'chriskempson/base16-vim'  " installs many colorschemes
-Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -16,7 +15,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'svermeulen/vim-easyclip'
 Plug 'edkolev/tmuxline.vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -25,6 +24,7 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript.jsx'] }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " ===================================
 
@@ -134,7 +134,8 @@ let g:ycm_seed_identifiers_with_syntax = 1
 " make ctrlp open in buffer mode
 "let g:ctrlp_cmd = "CtrlPBuffer"
 
-let g:airline#extensions#ctrlp#show_adjacent_modes = 0
+"let g:airline#extensions#ctrlp#show_adjacent_modes = 0
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:5,results:0'
 let g:ctrlp_custom_ignore = "node_modules"
 " ===================================
 
