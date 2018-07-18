@@ -24,6 +24,7 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript.jsx'] }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'machakann/vim-highlightedyank'
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " ===================================
