@@ -133,7 +133,7 @@ let g:ycm_seed_identifiers_with_syntax = 1
 " only show current mode in status line
 let g:airline#extensions#ctrlp#show_adjacent_modes = 0
 " positioning
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:0'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\.git$\|node_modules'
 " ===================================
