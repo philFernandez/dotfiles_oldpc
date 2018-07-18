@@ -44,6 +44,10 @@ function ofirefox {
   firefox $(pwd)
 }
 
+function ochrome {
+  google-chrome $(pwd)
+}
+
 # Define cl here so that I can show colorized PWD in first line
 # when running cl. I also use this with bk, to show colorized
 # PWD when going back a directory.

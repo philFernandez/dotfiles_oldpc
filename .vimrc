@@ -200,7 +200,7 @@ set cursorline
 set foldmethod=indent
 set foldnestmax=3
 " uncomment to disable fold on file open
-"set nofoldenable
+set nofoldenable
 
 " other settings
 set mouse=n

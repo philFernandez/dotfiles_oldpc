@@ -49,7 +49,8 @@ bindsym $mod+Tab+h focus parent; focus left
 bindsym $mod+Tab+l focus parent; focus right
 
 # launch firefox
-bindsym $mod+Shift+f exec gtk-launch firefox
+#bindsym $mod+Shift+f exec gtk-launch firefox
+bindsym $mod+Shift+f exec google-chrome
 # launch terminal (Commented out stock term launcher below)
 bindsym $mod+Return exec --no-startup-id gnome-terminal
 # launch PIA
