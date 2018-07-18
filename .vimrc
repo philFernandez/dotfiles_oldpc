@@ -129,14 +129,13 @@ let g:ycm_seed_identifiers_with_syntax = 1
 " <c-t> open in tab
 " <c-v> open v-split
 " <c-x> open split
-"let g:ctrlp_working_path_mode = 'c'
 
-" make ctrlp open in buffer mode
-"let g:ctrlp_cmd = "CtrlPBuffer"
-
-"let g:airline#extensions#ctrlp#show_adjacent_modes = 0
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:5,results:0'
-let g:ctrlp_custom_ignore = "node_modules"
+" only show current mode in status line
+let g:airline#extensions#ctrlp#show_adjacent_modes = 0
+" positioning
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\.git$\|node_modules'
 " ===================================
 
 
