@@ -26,8 +26,6 @@ syntax on
 set termguicolors
 color base16-oceanicnext
 
-hi Cursor guifg=black guibg=green gui=reverse
-set guicursor=a:block-blinkon100-Cursor/Cursor
 
 " VIM SETTINGS=======================
 " indent settings
@@ -83,10 +81,6 @@ set updatetime=100
 " prevent auto comment on new line
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
-
-
-
-
 
 
 inoremap jj <Esc>
