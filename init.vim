@@ -13,11 +13,13 @@ call plug#end()
 set termguicolors
 "set background=dark
 color base16-oceanicnext
+
+
 set number
+set updatetime=100
 
 inoremap jj <Esc>
 nnoremap <leader>f :NERDTreeToggle<CR>
-
 
 
 
