@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'jiangmiao/auto-pairs'
+Plug 'w0rp/ale'
 Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 Plug 'christoomey/vim-tmux-navigator'
@@ -120,6 +121,12 @@ let g:NERDTreeChDirMode = 2
 set complete-=i " limits the files searched for completions
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_seed_identifiers_with_syntax = 1
+
+let g:ycm_semantic_triggers = {
+    \   'css': [ 're!^\s{2}', 're!:\s+'  ],
+    \ }
+
+
 " ===================================
 
 

@@ -139,9 +139,15 @@ function nrm {
   ls -A | grep -v "$*" | xargs rm -rf
 }
 
+
+#function fmgr {
+  #echo "Opening $PWD in file manager..."
+  #xdg-open "$PWD"
+#}
+
+# i3 version of above function for use with nautilus
 function fmgr {
-  echo "Opening $PWD in file manager..."
-  xdg-open "$PWD"
+  gtk-launch nautilus $(pwd) 2> /dev/null &
 }
 
 function gitalias {
