@@ -1,5 +1,4 @@
 let mapleader=','
-syntax off
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
@@ -22,16 +21,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
-syntax enable
-if (has("termguicolors"))
-  set termguicolors
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
 endif
-
-color base16-oceanicnext
-"color base16-materia
-"color custom-oceanic
-
-
 
 let g:airline_powerline_fonts = 1
 
@@ -119,11 +112,9 @@ set noswapfile
 set autowrite
 set updatetime=100
 
-
 " prevent auto comment on new line
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
-
 
 inoremap jj <Esc>
 vnoremap cp "+y
@@ -136,5 +127,3 @@ nnoremap bp :bNext<CR>
 nnoremap bc :bdelete!<CR>
 nnoremap J }
 nnoremap K {
-
-

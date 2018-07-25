@@ -8,6 +8,7 @@ alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
 
 alias lua='lua5.3'
 
+#alias tmux="env TERM=xterm-256color tmux"
 
 # alias for theme changing npm program
 alias i3-style='$HOME/.i3-style/node_modules/.bin/i3-style' # https://github.com/acrisci/i3-style
@@ -32,7 +33,10 @@ alias zz='z -c'
 alias h='~'
 #alias start='urserver-start --no-manager'
 #alias stop='urserver-stop'
-alias v='vim'
+
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
 
 # -R makes it so piping from pygmentize is not broken
 alias less='less -R'
