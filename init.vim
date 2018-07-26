@@ -102,6 +102,7 @@ set noshowmode
 set ruler
 set number
 set cursorline
+set inccommand=split
 
 " zR - open all folds
 " zM - close all folds
@@ -156,6 +157,8 @@ nnoremap J }
 nnoremap K {
 nnoremap <space> A
 nnoremap <leader>sa ggVG
+nnoremap <leader>ev :edit ~/.config/nvim/init.vim<CR>
+nnoremap <silent> <leader>l :CtrlPBuffer<CR>
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -3<CR>
