@@ -101,7 +101,6 @@ set wrap
 set laststatus=2
 set noshowmode
 set ruler
-set wildmenu
 set number
 set cursorline
 
@@ -132,8 +131,21 @@ set updatetime=100
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
 
+" terminal mode mappings
+if has('nvim')
+  " go to normal mode
+  tnoremap <Esc> <C-\><C-N>
+  " navigate splits with alt key while in terminal mode
+  tnoremap <A-h> <C-\><C-N><C-W>h
+  tnoremap <A-j> <C-\><C-N><C-W>j
+  tnoremap <A-k> <C-\><C-N><C-W>k
+  tnoremap <A-l> <C-\><C-N><C-W>l
+endif
+" insert mode mappings
 inoremap jj <Esc>
+" visual mode mappings
 vnoremap cp "+y
+" normal mode mappings
 nnoremap cv "+p
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> cc :clo<CR>
@@ -143,3 +155,4 @@ nnoremap bp :bNext<CR>
 nnoremap bc :bdelete!<CR>
 nnoremap J }
 nnoremap K {
+nnoremap <space> A
