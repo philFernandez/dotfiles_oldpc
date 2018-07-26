@@ -155,6 +155,7 @@ nnoremap bc :bdelete!<CR>
 nnoremap J }
 nnoremap K {
 nnoremap <space> A
+nnoremap <leader>sa ggVG
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -3<CR>
