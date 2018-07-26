@@ -136,10 +136,10 @@ if has('nvim')
   " go to normal mode
   tnoremap <Esc> <C-\><C-N>
   " navigate splits with alt key while in terminal mode
-  tnoremap <A-h> <C-\><C-N><C-W>h
-  tnoremap <A-j> <C-\><C-N><C-W>j
-  tnoremap <A-k> <C-\><C-N><C-W>k
-  tnoremap <A-l> <C-\><C-N><C-W>l
+  tnoremap <C-h> <C-\><C-N><C-W>h
+  tnoremap <C-j> <C-\><C-N><C-W>j
+  tnoremap <C-k> <C-\><C-N><C-W>k
+  tnoremap <C-l> <C-\><C-N><C-W>l
 endif
 " insert mode mappings
 inoremap jj <Esc>
