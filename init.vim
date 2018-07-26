@@ -155,3 +155,10 @@ nnoremap bc :bdelete!<CR>
 nnoremap J }
 nnoremap K {
 nnoremap <space> A
+
+" resize up/down split
+nnoremap <silent> <F9> :resize -3<CR>
+nnoremap <silent> <F10> :resize +3<CR>
+" resize side to side split
+nnoremap <silent> <A-F9> :vertical resize -3<CR>
+nnoremap <silent><A-F10> :vertical resize +3<CR>
