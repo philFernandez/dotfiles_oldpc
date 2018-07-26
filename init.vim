@@ -5,7 +5,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'ervandew/supertab'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'chriskempson/base16-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
