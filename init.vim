@@ -1,6 +1,9 @@
 let mapleader=','
 
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'ervandew/supertab'
+Plug 'carlitux/deoplete-ternjs'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'chriskempson/base16-vim'
@@ -25,6 +28,19 @@ if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
+
+" COMPLETION ======================================
+let g:SuperTabDefaultCompletionType = "context"
+" this is fallback for above context option
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
+let g:SuperTabClosePreviewOnPopupClose = 1
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#ternjs#docs = 1
+let g:deoplete#sources#ternjs#filetypes = [
+      \ 'jsx',
+      \ 'javascript.jsx',
+      \]
+" =================================================
 
 let g:airline_powerline_fonts = 1
 
