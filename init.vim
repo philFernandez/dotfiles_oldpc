@@ -130,11 +130,11 @@ set updatetime=100
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
 
-" terminal mode mappings
+" terminal mode mappings (make same as normal mode mappings)
 if has('nvim')
   " go to normal mode
-  tnoremap <Esc> <C-\><C-N>
-  " navigate splits with alt key while in terminal mode
+  tnoremap jj <C-\><C-N>
+  " navigate splits with while in terminal mode
   tnoremap <C-h> <C-\><C-N><C-W>h
   tnoremap <C-j> <C-\><C-N><C-W>j
   tnoremap <C-k> <C-\><C-N><C-W>k
