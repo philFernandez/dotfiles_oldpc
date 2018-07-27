@@ -6,6 +6,7 @@ Plug 'ervandew/supertab'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'chriskempson/base16-vim'
+Plug 'ap/vim-css-color', { 'for': 'css' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
