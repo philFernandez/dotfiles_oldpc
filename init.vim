@@ -75,6 +75,11 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 
 let g:NERDTreeShowHidden = 1
 
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
+let g:airline#extensions#ctrlp#show_adjacent_modes = 0
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\.git$\|node_modules'
+
 " VIM SETTINGS=======================
 " indent settings
 set autoindent
