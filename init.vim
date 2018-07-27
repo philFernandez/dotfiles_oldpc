@@ -9,6 +9,8 @@ Plug 'chriskempson/base16-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
+Plug 'svermeulen/vim-easyclip'
+Plug 'tpope/vim-repeat'
 Plug 'Chiel92/vim-autoformat'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -80,6 +82,9 @@ let g:airline#extensions#ctrlp#show_adjacent_modes = 0
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '\.git$\|node_modules'
 
+let g:EasyClipAutoFormat = 1
+let g:EasyClipUseSubstituteDefaults = 1
+
 " VIM SETTINGS=======================
 " indent settings
 set autoindent
@@ -146,11 +151,16 @@ if has('nvim')
   tnoremap <C-k> <C-\><C-N><C-W>k
   tnoremap <C-l> <C-\><C-N><C-W>l
 endif
+
 " insert mode mappings
 inoremap jj <Esc>
+
 " visual mode mappings
+" copy into sys clipboard
 vnoremap cp "+y
+
 " normal mode mappings
+" paste from sys clipboard
 nnoremap cv "+p
 nnoremap <silent> <leader>f :NERDTreeToggle<CR>
 nnoremap <silent> cc :clo<CR>
@@ -164,6 +174,8 @@ nnoremap <space> A
 nnoremap <leader>sa ggVG
 nnoremap <leader>ev :edit ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>l :CtrlPBuffer<CR>
+" remap mark because of easy-clip
+nnoremap gm m
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -3<CR>
@@ -171,3 +183,8 @@ nnoremap <silent> <F10> :resize +3<CR>
 " resize side to side split
 nnoremap <silent> <A-F9> :vertical resize -3<CR>
 nnoremap <silent><A-F10> :vertical resize +3<CR>
+
+" plugin keymappings
+let g:AutoPairsShortcutToggle = '<F12>'
+nnoremap <silent> <F1> :GitGutterNextHunk<CR>
+nnoremap <silent> <F2> :GitGutterPrevHunk<CR>
