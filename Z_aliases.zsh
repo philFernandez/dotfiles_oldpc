@@ -3,6 +3,7 @@
 #       /  \__ \  __ |     _ \   |      |    _ \  \__ \  _|  \__ \
 #    ____| ____/ _| _|   _/  _\ ____| ___| _/  _\ ____/ ___| ____/
 
+alias which='which -a'
 
 alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
 
@@ -33,10 +34,6 @@ alias zz='z -c'
 alias h='~'
 #alias start='urserver-start --no-manager'
 #alias stop='urserver-stop'
-
-alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
 
 # -R makes it so piping from pygmentize is not broken
 alias less='less -R'
