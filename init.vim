@@ -135,6 +135,7 @@ hi cssClassName cterm=bold
 hi jsFunction cterm=bold
 hi Function cterm=bold
 hi Repeat cterm=bold
+hi jsReturn cterm=bold
 
 " zR - open all folds
 " zM - close all folds
