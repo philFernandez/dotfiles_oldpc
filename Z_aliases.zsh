@@ -9,7 +9,12 @@ alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
 
 alias lua='lua5.3'
 
-#alias tmux="env TERM=xterm-256color tmux"
+# closes terminal; will open in same state later
+alias q='tmux detach'
+# closes individual pane or window in tmux
+alias c='tmux kill-pane'
+# kill whole tmux session
+alias qq='tmux kill-server'
 
 # alias for theme changing npm program
 alias i3-style='$HOME/.i3-style/node_modules/.bin/i3-style' # https://github.com/acrisci/i3-style
@@ -81,8 +86,7 @@ alias cls='clear'
 alias cll='clear;ls -A'
 alias clll='clear; la'
 alias bk='cd ../ && cl'
-alias q='exit'
-alias qq='tmux kill-server'
+#alias q='exit'
 alias su='sudo su'
 alias pyg='pygmentize'
 alias md='mkdir -p'
