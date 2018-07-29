@@ -6,7 +6,7 @@ Plug 'ervandew/supertab'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'chriskempson/base16-vim'
-Plug 'ap/vim-css-color', { 'for': ['css', 'html', 'javascript', 'javascript.jsx'] }
+Plug 'ap/vim-css-color', { 'for': ['css', 'html', 'javascript', 'javascript.jsx', 'vim'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
@@ -44,7 +44,6 @@ let g:deoplete#sources#ternjs#filetypes = [
       \ 'javascript.jsx',
       \]
 " =================================================
-
 let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
@@ -59,11 +58,11 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
-let g:airline#extensions#cursormode#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_tab_nr = 0 " turn of numbers in tabs
 let g:airline#extensions#tabline#fnamemod = ':t' " dont show full path tabline
 let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#cursormode#enabled = 1
 " exposes shortcuts to move to tabs/buffes
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
@@ -115,6 +114,13 @@ set ruler
 set number
 set cursorline
 set inccommand=split
+set guicursor=n-v-i:block,c-ci-ve:ver25,r-cr:hor20,o:hor50
+      \,a:blinkoff400-blinkon250
+      \,sm:block-blinkoff150-blinkon175
+
+"set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+      "\,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+      "\,sm:block-blinkwait175-blinkoff150-blinkon175
 
 " zR - open all folds
 " zM - close all folds

@@ -23,7 +23,8 @@ alias i3-style='$HOME/.i3-style/node_modules/.bin/i3-style' # https://github.com
 alias eg='vim $HOME/.oh-my-zsh/custom/global_aliases.zsh'
 alias ef='vim $HOME/.dotfiles/myFunctions.zsh'
 alias ep='vim $HOME/.dotfiles/Z_aliases.zsh'
-alias ev='vim $HOME/.dotfiles/.vimrc'
+#alias ev='vim $HOME/.dotfiles/.vimrc'
+alias ev='vim $HOME/.dotfiles/init.vim'
 alias en='nvim $HOME/.dotfiles/init.vim'
 # Must be opened at symlink location for hightlighting to work
 alias ei='vim $HOME/.config/i3/config'
