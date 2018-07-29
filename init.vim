@@ -177,6 +177,7 @@ nnoremap <leader>ev :edit ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <leader>l :CtrlPBuffer<CR>
 " remap mark because of easy-clip
 nnoremap gm m
+nnoremap q :q<CR>
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -3<CR>
