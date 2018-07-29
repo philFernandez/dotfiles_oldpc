@@ -118,9 +118,23 @@ set guicursor=n-v-i:block,c-ci-ve:ver25,r-cr:hor20,o:hor50
       \,a:blinkoff400-blinkon250
       \,sm:block-blinkoff150-blinkon175
 
-"set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-      "\,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
-      "\,sm:block-blinkwait175-blinkoff150-blinkon175
+hi Question cterm=bold
+hi WarningMsg cterm=bold
+hi Statement cterm=bold
+"hi PreProc cterm=bold
+"hi Type cterm=bold
+hi Conditional cterm=bold
+hi Keyword cterm=bold
+hi Exception cterm=bold
+hi PreCondit cterm=bold
+hi StorageClass cterm=bold
+hi Structure cterm=bold
+hi Typedef cterm=bold
+
+hi cssClassName cterm=bold
+hi jsFunction cterm=bold
+hi Function cterm=bold
+hi Repeat cterm=bold
 
 " zR - open all folds
 " zM - close all folds
@@ -185,6 +199,7 @@ nnoremap <silent> <leader>l :CtrlPBuffer<CR>
 " remap mark because of easy-clip
 nnoremap gm m
 nnoremap q :q<CR>
+nnoremap <silent> <C-b><C-j> :!nodejs %<CR>
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -3<CR>
@@ -197,3 +212,7 @@ nnoremap <silent><A-F10> :vertical resize +3<CR>
 let g:AutoPairsShortcutToggle = '<F12>'
 nnoremap <silent> <F1> :GitGutterNextHunk<CR>
 nnoremap <silent> <F2> :GitGutterPrevHunk<CR>
+
+" show highlight group of any word under the cursor
+map <F3> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
+
