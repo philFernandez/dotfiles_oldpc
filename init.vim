@@ -164,6 +164,10 @@ set updatetime=100
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
 autocmd BufWrite * :RemoveTrailingSpaces
 
+" make it so inactive pane doesn't have a cursorline
+autocmd BufEnter * set cursorline
+autocmd BufLeave * set nocursorline
+
 " terminal mode mappings (make same as normal mode mappings)
 if has('nvim')
   " go to normal mode
