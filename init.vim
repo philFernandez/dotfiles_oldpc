@@ -207,11 +207,11 @@ nnoremap q :q<CR>
 nnoremap <silent> <C-b><C-j> :!nodejs %<CR>
 
 " resize up/down split
-nnoremap <silent> <F9> :resize -3<CR>
-nnoremap <silent> <F10> :resize +3<CR>
+nnoremap <silent> <F9> :resize -1<CR>
+nnoremap <silent> <F10> :resize +1<CR>
 " resize side to side split
-nnoremap <silent> <A-F9> :vertical resize -3<CR>
-nnoremap <silent><A-F10> :vertical resize +3<CR>
+nnoremap <silent> <A-F9> :vertical resize -1<CR>
+nnoremap <silent><A-F10> :vertical resize +1<CR>
 
 " plugin keymappings
 let g:AutoPairsShortcutToggle = '<F12>'
