@@ -113,6 +113,8 @@ set noshowmode
 set ruler
 set number
 set cursorline
+set splitbelow
+set splitright
 set inccommand=split
 set guicursor=n-v-i:block,c-ci-ve:ver25,r-cr:hor20,o:hor50
       \,a:blinkoff400-blinkon250
