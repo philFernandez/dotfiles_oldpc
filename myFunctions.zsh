@@ -9,7 +9,6 @@
 # This file does not have access to Z_aliases.zsh aliases
 # because this is sourced first. (Alphabetic By Filename)
 
-# ^^ (This may no longe be the case (no using oh-my-zhs))
 
 ##### USER FUNCTIONS #######
 
