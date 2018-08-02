@@ -2,8 +2,9 @@ let mapleader=','
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ervandew/supertab'
 Plug 'carlitux/deoplete-ternjs'
+Plug 'zchee/deoplete-jedi'
+Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'chriskempson/base16-vim'
 Plug 'ap/vim-css-color', { 'for': ['css', 'html', 'javascript', 'javascript.jsx', 'vim'] }
