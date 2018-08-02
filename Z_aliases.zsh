@@ -71,8 +71,6 @@ alias server='ssh philthy@192.168.0.39'
 alias py='python3'
 alias mv='mv -v'
 alias ii='xdg-open > /dev/null 2>&1'
-alias lss='tree'
-alias watchnet='watch -n 0.1 nmap -sP "192.168.0.*"'
 
 # These two not showing current freq on kubuntu
 # show cpu frequency
