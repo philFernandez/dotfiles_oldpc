@@ -5,6 +5,8 @@
 
 alias which='which -a'
 
+alias fm='ranger'
+
 alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
 
 alias lua='lua5.3'
