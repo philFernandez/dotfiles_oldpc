@@ -208,6 +208,7 @@ nnoremap <silent> <leader>l :CtrlPBuffer<CR>
 nnoremap gm m
 nnoremap q :q<CR>
 nnoremap <silent> <C-b><C-j> :!nodejs %<CR>
+nnoremap <silent> <C-b><C-p> :!python3 %<CR>
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -1<CR>
