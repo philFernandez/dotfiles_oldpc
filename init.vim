@@ -3,6 +3,7 @@ let mapleader=','
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'zchee/deoplete-jedi'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
