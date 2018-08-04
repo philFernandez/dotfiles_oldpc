@@ -122,6 +122,7 @@ set guicursor=n-v-i:block,c-ci-ve:ver25,r-cr:hor20,o:hor50
       \,a:blinkoff400-blinkon250
       \,sm:block-blinkoff150-blinkon175
 
+" syntax bolding
 hi Question cterm=bold
 hi WarningMsg cterm=bold
 hi Statement cterm=bold
