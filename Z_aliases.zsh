@@ -12,9 +12,8 @@ alias volume="watch -n 0.1 'pactl list sinks | grep -i volume'"
 alias lua='lua5.3'
 
 # closes terminal; will open in same state later
-alias q='tmux detach'
+alias q='exit'
 # closes individual pane or window in tmux
-alias c='tmux kill-pane'
 # kill whole tmux session
 alias qq='tmux kill-server'
 
