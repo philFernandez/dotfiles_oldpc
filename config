@@ -243,7 +243,7 @@ client.focused_inactive $dark   $dark   $inactive              #440000
 client.unfocused        $dark   $dark   $inactive              #440000
 client.urgent           $urgent $urgent $text_and_indicator_bg #440000
 
-hide_edge_borders both
+#hide_edge_borders smart
 # =========================================
 
 # start up applications
