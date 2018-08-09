@@ -8,7 +8,6 @@ ZSH_TMUX_AUTOSTART=true
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-eval "$(rbenv init -)"
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/philthy/.oh-my-zsh"
@@ -227,3 +226,5 @@ POWERLEVEL9K_BATTERY_DISCONNECTED_BACKGROUND="$DEFAULT_BACKGROUND"
 if [ $VIMRUNTIME ]; then
   POWERLEVEL9K_CONTEXT_TEMPLATE=$'\ue7c5 %m'
 fi
+
+eval "$(rbenv init -)"

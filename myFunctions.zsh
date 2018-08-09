@@ -134,7 +134,7 @@ function fl {
 }
 
 # remove all exept for $*
-function nrm {
+function rmn {
   ls -A | grep -v "$*" | xargs rm -rf
 }
 
