@@ -265,3 +265,4 @@ exec --no-startup-id setxkbmap -layout us -option ctrl:nocaps
 
 exec --no-startup-id nextcloud
 exec --no-startup-id parcellite
+# vim: ft=i3
