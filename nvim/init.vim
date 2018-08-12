@@ -8,7 +8,7 @@ Plug 'zchee/deoplete-jedi'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'chriskempson/base16-vim'
-Plug 'ap/vim-css-color', { 'for': ['css', 'html', 'javascript', 'javascript.jsx', 'vim'] }
+Plug 'ap/vim-css-color'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
