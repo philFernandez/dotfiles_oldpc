@@ -12,6 +12,11 @@
 
 ##### USER FUNCTIONS #######
 
+# show whole year when envoking cal
+function cal {
+  /usr/bin/cal $(date +%G)
+}
+
 # grep things without highlighting results
 function ncgrep {
   grep --color=never "$@"
