@@ -5,9 +5,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 ZSH_TMUX_AUTOCONNECT=false
 ZSH_TMUX_AUTOSTART=true
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+RANGER_LOAD_DEFAULT_RC=false
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/philthy/.oh-my-zsh"
