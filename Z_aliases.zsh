@@ -3,6 +3,9 @@
 #       /  \__ \  __ |     _ \   |      |    _ \  \__ \  _|  \__ \
 #    ____| ____/ _| _|   _/  _\ ____| ___| _/  _\ ____/ ___| ____/
 
+alias jc=javac
+alias jr=java
+
 alias which='which -a'
 
 alias fm='ranger'
