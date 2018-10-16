@@ -4,7 +4,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'zchee/deoplete-jedi'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
+"Plug 'zchee/deoplete-jedi'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'chriskempson/base16-vim'
@@ -77,6 +79,9 @@ nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 " ===================================
+
+let g:notes_directories = ['~/Notes/viNotes']
+let g:notes_suffix = '.txt'
 
 let g:NERDTreeShowHidden = 1
 
@@ -211,6 +216,7 @@ nnoremap gm m
 nnoremap q :q<CR>
 nnoremap <silent> <C-b><C-j> :!nodejs %<CR>
 nnoremap <silent> <C-b><C-p> :!python3 %<CR>
+nnoremap <leader>j :Java<CR>
 
 " resize up/down split
 nnoremap <silent> <F9> :resize -1<CR>

@@ -3,6 +3,7 @@
 #       /  \__ \  __ |     _ \   |      |    _ \  \__ \  _|  \__ \
 #    ____| ____/ _| _|   _/  _\ ____| ___| _/  _\ ____/ ___| ____/
 
+alias eclim=/home/philthy/eclipse/java-photon/eclipse/eclimd
 alias jc=javac
 alias jr=java
 
