@@ -1,3 +1,3 @@
 set nonumber
 set spell
-set tw=80
+set tw=100

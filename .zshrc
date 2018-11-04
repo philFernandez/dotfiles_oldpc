@@ -225,4 +225,4 @@ if [ $VIMRUNTIME ]; then
   POWERLEVEL9K_CONTEXT_TEMPLATE=$'\ue7c5 %m'
 fi
 
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"

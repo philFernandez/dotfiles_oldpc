@@ -169,6 +169,8 @@ set history=1000
 set noswapfile
 set autowrite
 set updatetime=100
+" Makes paragraphs auto format; Only useful when writing papers, not code
+set formatoptions+=a
 
 " prevent auto comment on new line
 autocmd BufRead,BufNewFile * setlocal formatoptions-=ro
